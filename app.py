@@ -9,7 +9,6 @@ import numpy as np
 # Project introduction
 st.write("# AI-Powered Chest X-ray App")
 st.write("###### This tool was developed for a final project in Artificial Intelligence at Plymouth University, using an advanced AI model with 97% accuracy to predict chest conditions.")
-st.write("### Date: August 2024")  # At the top, part of the introduction
 
 # Create a file uploader
 uploaded_file = st.file_uploader("Upload your chest X-ray image here...", type=["jpg", "jpeg", "png"])
@@ -85,3 +84,19 @@ if uploaded_file is not None:
         st.write("- Inform your close contacts as tuberculosis can be contagious.")
 
 
+
+
+
+# Add a small "August 2024" in the bottom right corner
+st.markdown(
+    """
+    <div style="position: fixed;
+                bottom: 10px;
+                right: 10px;
+                font-size: 20px;
+                color: gray;">
+        August 2024
+    </div>
+    """,
+    unsafe_allow_html=True
+)
