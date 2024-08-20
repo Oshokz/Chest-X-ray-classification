@@ -40,9 +40,9 @@ if uploaded_file is not None:
 
     try:
         model = load_model(model_path)
-        st.success("Model loaded successfully!")
+        st.success("Processing your image for predictions...")
     except Exception as e:
-        st.error(f"Error loading the model: {e}")
+        st.error(f"Error loading the image: {e}")
 
     # Make predictions
     prediction = model.predict(img)
