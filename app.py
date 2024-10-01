@@ -87,7 +87,7 @@ if uploaded_file is not None:
 
 
 
-# Add a small "August 2024" in the bottom right corner
+# Add a small "October 2024" in the bottom right corner
 st.markdown(
     """
     <div style="position: fixed;
@@ -95,7 +95,7 @@ st.markdown(
                 right: 10px;
                 font-size: 20px;
                 color: gray;">
-        August 2024
+        October 2024
     </div>
     """,
     unsafe_allow_html=True
