@@ -57,11 +57,21 @@
             border-radius: 5px;
         }
 
+        /* Footer styles */
         .footer {
             position: fixed;
             bottom: 10px;
             right: 10px;
             font-size: 14px;
+            color: gray;
+        }
+
+        /* Date on the right side */
+        .date {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
             color: gray;
         }
     </style>
@@ -98,9 +108,14 @@
         {% endif %}
     </div>
 
+    <!-- Date on the right side -->
+    <div class="date">
+        October 2024
+    </div>
+
     <!-- Footer -->
     <div class="footer">
-        October 2024
+        © 2024 AI Chest X-ray App
     </div>
 
 </body>
